@@ -1,0 +1,23 @@
+Package: simres
+Type: Package
+Title: Simulation and resampling techniques
+Version: 0.1.0
+Date: 2022-08-19
+Authors@R: person("Ruben", "Fernandez-Casal", , "rubenfcasal@gmail.com", 
+    role = c("aut", "cre"), comment = c(ORCID = "0000-0002-5785-3739"))
+Maintainer: Ruben Fernandez-Casal <rubenfcasal@gmail.com>
+Depends:
+    R (>= 2.14.0),
+    graphics
+Suggests:
+    boot
+Description: Functions and datasets used in the books: 'Simulacion Estadistica'
+    <https://rubenfcasal.github.io/simbook> and 'Tecnicas de Remuestreo'
+    <https://rubenfcasal.github.io/book_remuestreo>.
+License: GPL (>= 2)
+URL: https://github.com/rubenfcasal/simres
+BugReports: https://github.com/rubenfcasal/simres/issues
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
