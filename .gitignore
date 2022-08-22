@@ -7,4 +7,3 @@ src/*.so
 src/*.dll
 src/*.mod
 *.orig
-docs
