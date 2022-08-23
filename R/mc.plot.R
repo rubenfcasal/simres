@@ -22,7 +22,7 @@
 #' @export mc.plot
 mc.plot <- function(x, level = 0.95, true.value = NULL, main,
                     omd = c(0.05, 0.95, 0.01, 0.95), ...){
-  old.par <- par(mfrow = c(1, 2), omd = omd)
+  old.par <- par(mfrow = c(2, 2), omd = omd)
   on.exit(par(old.par))
   # Aproximacion distribución
   hist(x, breaks = "FD", freq = FALSE,

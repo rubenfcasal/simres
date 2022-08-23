@@ -6,7 +6,7 @@
 \alias{plot.rhtest}
 \title{Test repetition}
 \usage{
-rephtest(n = 30, nsim = 1000, test = chisq.cont.test, rand.gen = runif, ...)
+rephtest(n = 30, nsim = 1000, test, rand.gen = runif, ...)
 
 \method{summary}{rhtest}(object, alpha = c(0.01, 0.05, 0.1, 0.25, 0.5), ...)
 

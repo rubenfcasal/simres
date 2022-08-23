@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://rubenfcasal.github.io/simres/index.html</loc>
+    <loc>https://rubenfcasal.github.io/simres/index.html</loc>
   </url>
   <url>
-    <loc>http://rubenfcasal.github.io/simres/reference/chisq.cont.test.html</loc>
+    <loc>https://rubenfcasal.github.io/simres/reference/chisq.cont.test.html</loc>
   </url>
   <url>
-    <loc>http://rubenfcasal.github.io/simres/reference/cpu.time.html</loc>
+    <loc>https://rubenfcasal.github.io/simres/reference/cpu.time.html</loc>
   </url>
   <url>
-    <loc>http://rubenfcasal.github.io/simres/reference/freq.test.html</loc>
+    <loc>https://rubenfcasal.github.io/simres/reference/freq.test.html</loc>
   </url>
   <url>
-    <loc>http://rubenfcasal.github.io/simres/reference/lifetimes.html</loc>
+    <loc>https://rubenfcasal.github.io/simres/reference/lifetimes.html</loc>
   </url>
   <url>
-    <loc>http://rubenfcasal.github.io/simres/reference/mc.plot.html</loc>
+    <loc>https://rubenfcasal.github.io/simres/reference/mc.plot.html</loc>
   </url>
   <url>
-    <loc>http://rubenfcasal.github.io/simres/reference/rephtest.html</loc>
+    <loc>https://rubenfcasal.github.io/simres/reference/rephtest.html</loc>
   </url>
   <url>
-    <loc>http://rubenfcasal.github.io/simres/reference/set.rng.html</loc>
+    <loc>https://rubenfcasal.github.io/simres/reference/set.rng.html</loc>
   </url>
   <url>
-    <loc>http://rubenfcasal.github.io/simres/reference/simres-internals.html</loc>
+    <loc>https://rubenfcasal.github.io/simres/reference/simres-internals.html</loc>
   </url>
   <url>
-    <loc>http://rubenfcasal.github.io/simres/reference/simres-package.html</loc>
+    <loc>https://rubenfcasal.github.io/simres/reference/simres-package.html</loc>
   </url>
 </urlset>

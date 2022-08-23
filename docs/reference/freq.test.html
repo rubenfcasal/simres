@@ -42,8 +42,8 @@
 <meta property="og:title" content="Frequency test — freq.test" />
 <meta property="og:description" content="Performs the chi-squared goodness-of-fit test for the particular case
 of an uniform distribution in the unit interval
-(by grouping data into bins, x = floor(nclass*u) + 1,
-and calling chisq.test(x)).
+(by grouping data into bins, y = floor(nclass*x) + 1,
+and calling chisq.test(y)).
 Used for testing random number generators." />
 
 
@@ -76,7 +76,7 @@ Used for testing random number generators." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">simres</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.1</span>
       </span>
     </div>
 
@@ -123,18 +123,18 @@ Used for testing random number generators." />
     <div class="ref-description">
     <p>Performs the chi-squared goodness-of-fit test for the particular case
 of an uniform distribution in the unit interval
-(by grouping data into <em>bins</em>, <code>x = floor(nclass*u) + 1</code>,
-and calling <code><a href='https://rdrr.io/r/stats/chisq.test.html'>chisq.test</a></code><code>(x)</code>).
+(by grouping data into <em>bins</em>, <code>y = floor(nclass*x) + 1</code>,
+and calling <code><a href='https://rdrr.io/r/stats/chisq.test.html'>chisq.test</a></code><code>(y)</code>).
 Used for testing random number generators.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>freq.test</span><span class='op'>(</span><span class='va'>u</span>, nclass <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/Round.html'>floor</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span><span class='op'>(</span><span class='va'>u</span><span class='op'>)</span><span class='op'>/</span><span class='fl'>10</span><span class='op'>)</span><span class='op'>)</span></pre>
+    <pre class="usage"><span class='fu'>freq.test</span><span class='op'>(</span><span class='va'>x</span>, nclass <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/Round.html'>floor</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span><span class='op'>(</span><span class='va'>x</span><span class='op'>)</span><span class='op'>/</span><span class='fl'>10</span><span class='op'>)</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>u</th>
+      <th>x</th>
       <td><p>numeric vector containing the observed values
 (or the pseudorandom numbers).</p></td>
     </tr>

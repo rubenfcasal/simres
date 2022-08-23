@@ -4,10 +4,10 @@
 \alias{freq.test}
 \title{Frequency test}
 \usage{
-freq.test(u, nclass = floor(length(u)/10))
+freq.test(x, nclass = floor(length(x)/10))
 }
 \arguments{
-\item{u}{numeric vector containing the observed values
+\item{x}{numeric vector containing the observed values
 (or the pseudorandom numbers).}
 
 \item{nclass}{number of bins (to partition the unit interval).}
@@ -18,8 +18,8 @@ A list with class \code{"htest"} returned by \code{\link[=chisq.test]{chisq.test
 \description{
 Performs the chi-squared goodness-of-fit test for the particular case
 of an uniform distribution in the unit interval
-(by grouping data into \emph{bins}, \code{x = floor(nclass*u) + 1},
-and calling \code{\link{chisq.test}}\code{(x)}).
+(by grouping data into \emph{bins}, \code{y = floor(nclass*x) + 1},
+and calling \code{\link{chisq.test}}\code{(y)}).
 Used for testing random number generators.
 }
 \examples{

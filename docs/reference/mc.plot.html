@@ -78,7 +78,7 @@ the corresponding convergence plot." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">simres</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.1</span>
       </span>
     </div>
 
@@ -228,7 +228,6 @@ width of the confidence interval).</p>
 <span class='r-in'><span class='va'>teor</span> <span class='op'>&lt;-</span> <span class='fl'>0</span></span>
 <span class='r-in'><span class='va'>res</span> <span class='op'>&lt;-</span> <span class='fu'>mc.plot</span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/stats/Normal.html'>rnorm</a></span><span class='op'>(</span><span class='fl'>1000</span>, mean <span class='op'>=</span> <span class='va'>teor</span><span class='op'>)</span>, true.value <span class='op'>=</span> <span class='va'>teor</span><span class='op'>)</span></span>
 <span class='r-plt img'><img src='mc.plot-1.png' alt='' width='700' height='433' /></span>
-<span class='r-plt img'><img src='mc.plot-2.png' alt='' width='700' height='433' /></span>
 <span class='r-in'><span class='va'>res</span></span>
 <span class='r-out co'><span class='r-pr'>#&gt;</span> $approx</span>
 <span class='r-out co'><span class='r-pr'>#&gt;</span> [1] -0.01164814</span>
@@ -240,7 +239,7 @@ width of the confidence interval).</p>
 <span class='r-in'><span class='va'>p</span> <span class='op'>&lt;-</span> <span class='fl'>0.4</span></span>
 <span class='r-in'><span class='va'>res</span> <span class='op'>&lt;-</span> <span class='fu'>conv.plot</span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/stats/Binomial.html'>rbinom</a></span><span class='op'>(</span><span class='fl'>1000</span>, size <span class='op'>=</span> <span class='fl'>1</span>, prob <span class='op'>=</span> <span class='va'>p</span><span class='op'>)</span><span class='op'>)</span></span>
 <span class='r-in'><span class='fu'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span><span class='op'>(</span>h <span class='op'>=</span> <span class='va'>p</span>, lty <span class='op'>=</span> <span class='fl'>2</span>, col <span class='op'>=</span> <span class='st'>"red"</span><span class='op'>)</span> <span class='co'># Theoretical value</span></span>
-<span class='r-plt img'><img src='mc.plot-3.png' alt='' width='700' height='433' /></span>
+<span class='r-plt img'><img src='mc.plot-2.png' alt='' width='700' height='433' /></span>
 <span class='r-in'><span class='va'>res</span></span>
 <span class='r-out co'><span class='r-pr'>#&gt;</span> $approx</span>
 <span class='r-out co'><span class='r-pr'>#&gt;</span> [1] 0.394</span>
@@ -252,7 +251,7 @@ width of the confidence interval).</p>
 <span class='r-in'><span class='fu'><a href='https://rdrr.io/r/graphics/curve.html'>curve</a></span><span class='op'>(</span><span class='va'>fun</span>, <span class='fl'>0</span>, <span class='fl'>1</span><span class='op'>)</span></span>
 <span class='r-in'><span class='fu'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span><span class='op'>(</span>h <span class='op'>=</span> <span class='fl'>0</span>, lty <span class='op'>=</span> <span class='fl'>2</span><span class='op'>)</span></span>
 <span class='r-in'><span class='fu'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span><span class='op'>(</span>v <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>0</span>, <span class='fl'>1</span><span class='op'>)</span>, lty <span class='op'>=</span> <span class='fl'>2</span><span class='op'>)</span></span>
-<span class='r-plt img'><img src='mc.plot-4.png' alt='' width='700' height='433' /></span>
+<span class='r-plt img'><img src='mc.plot-3.png' alt='' width='700' height='433' /></span>
 <span class='r-in'><span class='fu'><a href='https://rdrr.io/r/base/Random.html'>set.seed</a></span><span class='op'>(</span><span class='fl'>1</span><span class='op'>)</span></span>
 <span class='r-in'><span class='fu'>mc.integral</span><span class='op'>(</span><span class='va'>fun</span>, <span class='fl'>0</span>, <span class='fl'>1</span>, <span class='fl'>1000</span><span class='op'>)</span></span>
 <span class='r-out co'><span class='r-pr'>#&gt;</span> $approx</span>
@@ -262,7 +261,7 @@ width of the confidence interval).</p>
 <span class='r-out co'><span class='r-pr'>#&gt;</span> [1] 0.06752324</span>
 <span class='r-out co'><span class='r-pr'>#&gt;</span> </span>
 <span class='r-in'><span class='fu'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span><span class='op'>(</span>h <span class='op'>=</span> <span class='fl'>4</span><span class='op'>/</span><span class='fl'>5</span>, lty <span class='op'>=</span> <span class='fl'>2</span>, col <span class='op'>=</span> <span class='st'>"red"</span><span class='op'>)</span> <span class='co'># Theoretical value</span></span>
-<span class='r-plt img'><img src='mc.plot-5.png' alt='' width='700' height='433' /></span>
+<span class='r-plt img'><img src='mc.plot-4.png' alt='' width='700' height='433' /></span>
 <span class='r-in'><span class='fu'><a href='https://rdrr.io/r/base/Random.html'>set.seed</a></span><span class='op'>(</span><span class='fl'>1</span><span class='op'>)</span></span>
 <span class='r-in'><span class='fu'>mc.integral</span><span class='op'>(</span><span class='va'>fun</span>, <span class='fl'>0</span>, <span class='fl'>1</span>, <span class='fl'>5000</span>, plot <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span></span>
 <span class='r-out co'><span class='r-pr'>#&gt;</span> $approx</span>
