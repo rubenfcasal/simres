@@ -36,6 +36,10 @@ reference:
     desc: "Data sets included in the package."
     contents:
       - lifetimes
+  - title: "Examples"
+    desc: "Examples used in the books."
+    contents:
+      - ddexp
   - title: "Utilities"
     desc: "Other utilities..."
     contents:

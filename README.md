@@ -4,7 +4,8 @@ Functions and datasets used in the books:
 * [Simulacion Estadistica](https://rubenfcasal.github.io/simbook)
 * [Tecnicas de Remuestreo](https://rubenfcasal.github.io/book_remuestreo)
 
-For more information visit <https://rubenfcasal.github.io/simres.html>.
+For more information visit <https://rubenfcasal.github.io/simres.html> or
+[Fernández-Casal and Cao (2022)](https://github.com/rubenfcasal/simbook2).
 
 ## Installation
 
@@ -19,7 +20,7 @@ remotes::install_github("rubenfcasal/simres")
 Alternatively, Windows users (with R >= 4.X.X) may install the corresponding *simres_X.Y.Z.zip* file in the [releases section](https://github.com/rubenfcasal/simres/releases/latest) of the github repository:
 
 ``` r
-install.packages('https://github.com/rubenfcasal/simres/releases/download/v0.1/simres_0.1.0.zip', 
+install.packages('https://github.com/rubenfcasal/simres/releases/download/v0.1/simres_0.1.2.zip', 
                  repos = NULL)
 
 ``` 
