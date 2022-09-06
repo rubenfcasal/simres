@@ -2,7 +2,7 @@ Package: simres
 Type: Package
 Title: Simulation and resampling techniques
 Version: 0.1.2
-Date: 2022-08-24
+Date: 2022-08-30
 Authors@R: person("Ruben", "Fernandez-Casal", , "rubenfcasal@gmail.com", 
     role = c("aut", "cre"), comment = c(ORCID = "0000-0002-5785-3739"))
 Maintainer: Ruben Fernandez-Casal <rubenfcasal@gmail.com>

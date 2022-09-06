@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>simres: Simulation and resampling techniques — simres-package • simres</title>
+<title>Ratio-of-uniforms method for Cauchy distribution generation — rcauchy.rou • simres</title>
 
 
 <!-- jquery -->
@@ -39,12 +39,8 @@
 
 
 
-<meta property="og:title" content="simres: Simulation and resampling techniques — simres-package" />
-<meta property="og:description" content="Functions and datasets used in the books:
-Simulacion Estadistica
-Tecnicas de Remuestreo
-
-" />
+<meta property="og:title" content="Ratio-of-uniforms method for Cauchy distribution generation — rcauchy.rou" />
+<meta property="og:description" content="Uses the ratio-of-uniforms method for simulating a standard Cauchy distribution." />
 
 
 
@@ -115,29 +111,49 @@ Tecnicas de Remuestreo
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>simres: Simulation and resampling techniques</h1>
-    <small class="dont-index">Source: <a href='https://github.com/rubenfcasal/simres/blob/master/R/simres_package.R'><code>R/simres_package.R</code></a></small>
-    <div class="hidden name"><code>simres-package.Rd</code></div>
+    <h1>Ratio-of-uniforms method for Cauchy distribution generation</h1>
+    <small class="dont-index">Source: <a href='https://github.com/rubenfcasal/simres/blob/master/R/ar.R'><code>R/ar.R</code></a></small>
+    <div class="hidden name"><code>rcauchy.rou.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Functions and datasets used in the books:</p><ul>
-<li><p><a href='https://rubenfcasal.github.io/simbook2'>Simulacion Estadistica</a></p></li>
-<li><p><a href='https://rubenfcasal.github.io/book_remuestreo'>Tecnicas de Remuestreo</a></p></li>
-</ul>
-
+    <p>Uses the ratio-of-uniforms method for simulating a standard Cauchy distribution.</p>
     </div>
 
+    <pre class="usage"><span class='fu'>rcauchy.rou</span><span class='op'>(</span><span class='va'>n</span><span class='op'>)</span></pre>
 
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>n</th>
+      <td><p>number of observations.</p></td>
+    </tr>
+    </table>
 
-    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>For more information visit <a href='https://rubenfcasal.github.io/simres.html'>https://rubenfcasal.github.io/simres.html</a>.</p>
-    <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
+    <p>Returns a numeric vector with the random deviates and an attribute <code>ngen</code>
+with the required number of uniform generations.</p>
+    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <p>Cao R., Fernández-Casal R. (2021). <em><a href='https://rubenfcasal.github.io/book_remuestreo'>Técnicas de Remuestreo</a></em>,  (<a href='https://github.com/rubenfcasal/book_remuestreo'>github</a>).</p>
-<p>Fernández-Casal R., Cao R. (2022). <em><a href='https://rubenfcasal.github.io/simbook2'>Simulación Estadística</a></em>, segunda edición, (<a href='https://github.com/rubenfcasal/simbook2'>github</a>).</p>
+    <div class='dont-index'><p><code><a href='https://rdrr.io/r/stats/Cauchy.html'>rcauchy()</a></code></p></div>
 
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><span class='r-in'><span class='fu'><a href='https://rdrr.io/r/base/Random.html'>set.seed</a></span><span class='op'>(</span><span class='fl'>1</span><span class='op'>)</span></span>
+<span class='r-in'><span class='va'>nsim</span> <span class='op'>&lt;-</span> <span class='fl'>10</span><span class='op'>^</span><span class='fl'>4</span></span>
+<span class='r-in'><span class='va'>rx</span> <span class='op'>&lt;-</span> <span class='fu'>rcauchy.rou</span><span class='op'>(</span><span class='va'>nsim</span><span class='op'>)</span></span>
+<span class='r-in'><span class='fu'><a href='https://rdrr.io/r/graphics/hist.html'>hist</a></span><span class='op'>(</span><span class='va'>rx</span>, breaks <span class='op'>=</span> <span class='st'>"FD"</span>, freq <span class='op'>=</span> <span class='cn'>FALSE</span>, main <span class='op'>=</span> <span class='st'>""</span>, xlim <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='op'>-</span><span class='fl'>6</span>, <span class='fl'>6</span><span class='op'>)</span><span class='op'>)</span></span>
+<span class='r-in'><span class='fu'><a href='https://rdrr.io/r/graphics/curve.html'>curve</a></span><span class='op'>(</span><span class='va'>dcauchy</span>, add <span class='op'>=</span> <span class='cn'>TRUE</span><span class='op'>)</span></span>
+<span class='r-plt img'><img src='rcauchy.rou-1.png' alt='' width='700' height='433' /></span>
+<span class='r-in'><span class='va'>ngen</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/attr.html'>attr</a></span><span class='op'>(</span><span class='va'>rx</span>, <span class='st'>"ngen"</span><span class='op'>)</span></span>
+<span class='r-in'><span class='op'>{</span><span class='fu'><a href='https://rdrr.io/r/base/cat.html'>cat</a></span><span class='op'>(</span><span class='st'>"Number of generations = "</span>, <span class='va'>ngen</span><span class='op'>)</span></span>
+<span class='r-in'>  <span class='fu'><a href='https://rdrr.io/r/base/cat.html'>cat</a></span><span class='op'>(</span><span class='st'>"\nAveraged number of generations = "</span>, <span class='va'>ngen</span><span class='op'>/</span><span class='va'>nsim</span><span class='op'>)</span></span>
+<span class='r-in'>  <span class='fu'><a href='https://rdrr.io/r/base/cat.html'>cat</a></span><span class='op'>(</span><span class='st'>"\nRejection rate = "</span>, <span class='fl'>1</span><span class='op'>-</span><span class='va'>nsim</span><span class='op'>/</span><span class='va'>ngen</span>,<span class='st'>"\n"</span><span class='op'>)</span><span class='op'>}</span></span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> Number of generations =  12751</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> Averaged number of generations =  1.2751</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> Rejection rate =  0.2157478 </span>
+</pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">

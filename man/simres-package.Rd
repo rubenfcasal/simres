@@ -8,7 +8,7 @@
 \description{
 Functions and datasets used in the books:
 \itemize{
-\item \href{https://rubenfcasal.github.io/simbook}{Simulacion Estadistica}
+\item \href{https://rubenfcasal.github.io/simbook2}{Simulacion Estadistica}
 \item \href{https://rubenfcasal.github.io/book_remuestreo}{Tecnicas de Remuestreo}
 }
 }
@@ -18,7 +18,7 @@ For more information visit \url{https://rubenfcasal.github.io/simres.html}.
 \references{
 Cao R., Fernández-Casal R. (2021). \emph{\href{https://rubenfcasal.github.io/book_remuestreo}{Técnicas de Remuestreo}},  (\href{https://github.com/rubenfcasal/book_remuestreo}{github}).
 
-Fernández-Casal R., Cao R. (2022). \emph{\href{https://rubenfcasal.github.io/simbook}{Simulación Estadística}}, (\href{https://github.com/rubenfcasal/simbook}{github}).
+Fernández-Casal R., Cao R. (2022). \emph{\href{https://rubenfcasal.github.io/simbook2}{Simulación Estadística}}, segunda edición, (\href{https://github.com/rubenfcasal/simbook2}{github}).
 }
 \keyword{Monte-Carlo}
 \keyword{bootstrap}

@@ -9,7 +9,7 @@
 \usage{
 ddexp(x, rate = 1)
 
-pdexp(x, rate = 1)
+pdexp(q, rate = 1)
 
 qdexp(p, rate = 1)
 
@@ -48,7 +48,7 @@ The cummulative distribution is:
 \end{array}
 \ \right.}
 The inverse cumulative distribution function is given by
-\deqn{F^{-1}(p) = - \operatorname{sign}(p-0.5)\frac{\ln(1 - 2 \left\vert p-0.5 \right\vert )}
+\deqn{F^{-1}(p) = - \operatorname{sign}(p-0.5)\frac{\ln(1 - 2 | p - 0.5 | )}
 {\lambda}.}
 }
 \examples{

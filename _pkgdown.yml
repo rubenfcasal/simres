@@ -40,6 +40,7 @@ reference:
     desc: "Examples used in the books."
     contents:
       - ddexp
+      - rcauchy.rou
   - title: "Utilities"
     desc: "Other utilities..."
     contents:

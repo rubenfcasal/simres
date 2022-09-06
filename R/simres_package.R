@@ -6,7 +6,7 @@
 #' simres: Simulation and resampling techniques
 #'
 #' Functions and datasets used in the books:
-#' * [Simulacion Estadistica](https://rubenfcasal.github.io/simbook)
+#' * [Simulacion Estadistica](https://rubenfcasal.github.io/simbook2)
 #' * [Tecnicas de Remuestreo](https://rubenfcasal.github.io/book_remuestreo)
 #'
 #' For more information visit <https://rubenfcasal.github.io/simres.html>.
@@ -21,7 +21,7 @@
 #' @references
 #' Cao R., Fernández-Casal R. (2021). *[Técnicas de Remuestreo](https://rubenfcasal.github.io/book_remuestreo)*,  ([github](https://github.com/rubenfcasal/book_remuestreo)).
 #'
-#' Fernández-Casal R., Cao R. (2022). *[Simulación Estadística](https://rubenfcasal.github.io/simbook)*, ([github](https://github.com/rubenfcasal/simbook)).
+#' Fernández-Casal R., Cao R. (2022). *[Simulación Estadística](https://rubenfcasal.github.io/simbook2)*, segunda edición, ([github](https://github.com/rubenfcasal/simbook2)).
 #'
 NULL
 
