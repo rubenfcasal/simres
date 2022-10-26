@@ -22,6 +22,9 @@ reference:
       - rlcg
       - rvng
       - mc.integral
+      - rpmf
+      - rpmf.table
+      - rpmf.alias
   - title: "Simulation results"
     desc: "Diagnosis of simulation results, including plots and goodness-of-fit test."
     contents:
@@ -45,4 +48,5 @@ reference:
     desc: "Other utilities..."
     contents:
       - cpu.time
+      - cdf.plot
 

@@ -1,5 +1,9 @@
 # simres: Simulation and resampling techniques
 
+<!-- 
+pkgdown::build_site()
+-->
+
 Functions and datasets used in the books:
 * [Simulacion Estadistica](https://rubenfcasal.github.io/simbook2)
 * [Tecnicas de Remuestreo](https://rubenfcasal.github.io/book_remuestreo)
@@ -19,9 +23,8 @@ remotes::install_github("rubenfcasal/simres")
 Alternatively, Windows users (with R >= 4.X.X) may install the corresponding *simres_X.Y.Z.zip* file in the [releases section](https://github.com/rubenfcasal/simres/releases/latest) of the github repository:
 
 ``` r
-install.packages('https://github.com/rubenfcasal/simres/releases/download/v0.1/simres_0.1.2.zip', 
+install.packages('https://github.com/rubenfcasal/simres/releases/download/v0.1/simres_0.1.3.zip', 
                  repos = NULL)
-
 ``` 
 
 ## References

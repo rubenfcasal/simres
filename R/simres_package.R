@@ -17,7 +17,7 @@
 #' @import graphics
 #' @import stats
 #' @importFrom utils flush.console
-#' @importFrom grDevices dev.interactive devAskNewPage
+#' @importFrom grDevices dev.interactive devAskNewPage dev.flush dev.hold
 #' @references
 #' Cao R., Fernández-Casal R. (2021). *[Técnicas de Remuestreo](https://rubenfcasal.github.io/book_remuestreo)*,  ([github](https://github.com/rubenfcasal/book_remuestreo)).
 #'

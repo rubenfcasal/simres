@@ -1,3 +1,10 @@
+# simres 0.1.3 (2022-10-26)
+
+* Added  `rpmf()`, `rpmf.table()`, `rpmf.alias()`. 
+
+* Added  `cdf.plot()`.
+
+
 # simres 0.1.2 (2022-08-30)
 
 * Added the double-exponential distribution 

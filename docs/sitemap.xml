@@ -4,6 +4,9 @@
     <loc>https://rubenfcasal.github.io/simres/index.html</loc>
   </url>
   <url>
+    <loc>https://rubenfcasal.github.io/simres/reference/cdf.plot.html</loc>
+  </url>
+  <url>
     <loc>https://rubenfcasal.github.io/simres/reference/chisq.cont.test.html</loc>
   </url>
   <url>
@@ -26,6 +29,15 @@
   </url>
   <url>
     <loc>https://rubenfcasal.github.io/simres/reference/rephtest.html</loc>
+  </url>
+  <url>
+    <loc>https://rubenfcasal.github.io/simres/reference/rpmf.alias.html</loc>
+  </url>
+  <url>
+    <loc>https://rubenfcasal.github.io/simres/reference/rpmf.html</loc>
+  </url>
+  <url>
+    <loc>https://rubenfcasal.github.io/simres/reference/rpmf.table.html</loc>
   </url>
   <url>
     <loc>https://rubenfcasal.github.io/simres/reference/set.rng.html</loc>
