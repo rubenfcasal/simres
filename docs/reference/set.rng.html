@@ -80,7 +80,7 @@ using the Von Neumann middle-square method." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">simres</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.2</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.3</span>
       </span>
     </div>
 
@@ -136,13 +136,13 @@ using the linear congruential generator (LCG).</p>
 using the Von Neumann middle-square method.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>set.rng</span><span class='op'>(</span>seed <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/numeric.html'>as.numeric</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/Sys.time.html'>Sys.time</a></span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span>, type <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"lcg"</span>, <span class='st'>"vng"</span><span class='op'>)</span>, <span class='va'>...</span><span class='op'>)</span>
-
-<span class='fu'>rng</span><span class='op'>(</span><span class='va'>n</span><span class='op'>)</span>
-
-<span class='fu'>rlcg</span><span class='op'>(</span><span class='va'>n</span>, seed <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/numeric.html'>as.numeric</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/Sys.time.html'>Sys.time</a></span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span>, a <span class='op'>=</span> <span class='fl'>7</span><span class='op'>^</span><span class='fl'>5</span>, c <span class='op'>=</span> <span class='fl'>0</span>, m <span class='op'>=</span> <span class='fl'>2</span><span class='op'>^</span><span class='fl'>31</span> <span class='op'>-</span> <span class='fl'>1</span><span class='op'>)</span>
-
-<span class='fu'>rvng</span><span class='op'>(</span><span class='va'>n</span>, seed <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/numeric.html'>as.numeric</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/Sys.time.html'>Sys.time</a></span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span>, k <span class='op'>=</span> <span class='fl'>4</span><span class='op'>)</span></pre>
+    <pre class="usage"><span><span class='fu'>set.rng</span><span class='op'>(</span>seed <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/numeric.html'>as.numeric</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/Sys.time.html'>Sys.time</a></span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span>, type <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"lcg"</span>, <span class='st'>"vng"</span><span class='op'>)</span>, <span class='va'>...</span><span class='op'>)</span></span>
+<span></span>
+<span><span class='fu'>rng</span><span class='op'>(</span><span class='va'>n</span><span class='op'>)</span></span>
+<span></span>
+<span><span class='fu'>rlcg</span><span class='op'>(</span><span class='va'>n</span>, seed <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/numeric.html'>as.numeric</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/Sys.time.html'>Sys.time</a></span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span>, a <span class='op'>=</span> <span class='fl'>7</span><span class='op'>^</span><span class='fl'>5</span>, c <span class='op'>=</span> <span class='fl'>0</span>, m <span class='op'>=</span> <span class='fl'>2</span><span class='op'>^</span><span class='fl'>31</span> <span class='op'>-</span> <span class='fl'>1</span><span class='op'>)</span></span>
+<span></span>
+<span><span class='fu'>rvng</span><span class='op'>(</span><span class='va'>n</span>, seed <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/numeric.html'>as.numeric</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/Sys.time.html'>Sys.time</a></span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span>, k <span class='op'>=</span> <span class='fl'>4</span><span class='op'>)</span></span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -188,9 +188,9 @@ environment.</p>
 <p><code>rng()</code>, <code>rlcg()</code> and <code>rvmg()</code> return a numeric vector.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><span class='r-in'><span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='fu'>set.rng</span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span></span>
+    <pre class="examples"><span class='r-in'><span><span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='fu'>set.rng</span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span></span></span>
 <span class='r-out co'><span class='r-pr'>#&gt;</span> $seed</span>
-<span class='r-out co'><span class='r-pr'>#&gt;</span> [1] 1666815329</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> [1] 1666817984</span>
 <span class='r-out co'><span class='r-pr'>#&gt;</span> </span>
 <span class='r-out co'><span class='r-pr'>#&gt;</span> $type</span>
 <span class='r-out co'><span class='r-pr'>#&gt;</span> [1] "lcg"</span>
@@ -206,12 +206,12 @@ environment.</p>
 <span class='r-out co'><span class='r-pr'>#&gt;</span> [1] 2147483647</span>
 <span class='r-out co'><span class='r-pr'>#&gt;</span> </span>
 <span class='r-out co'><span class='r-pr'>#&gt;</span> </span>
-<span class='r-in'><span class='fu'>rng</span><span class='op'>(</span><span class='fl'>10</span><span class='op'>)</span></span>
-<span class='r-out co'><span class='r-pr'>#&gt;</span>  [1] 0.112251567 0.612083587 0.288841084 0.552106652 0.256500289 0.000363275</span>
-<span class='r-out co'><span class='r-pr'>#&gt;</span>  [7] 0.105563622 0.207797016 0.444448542 0.846651057</span>
-<span class='r-in'><span class='va'>.rng</span></span>
+<span class='r-in'><span><span class='fu'>rng</span><span class='op'>(</span><span class='fl'>10</span><span class='op'>)</span></span></span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span>  [1] 0.133032895 0.883865881 0.133869771 0.949247469 0.002216001 0.244331291</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span>  [7] 0.475999721 0.127316932 0.815676161 0.069237781</span>
+<span class='r-in'><span><span class='va'>.rng</span></span></span>
 <span class='r-out co'><span class='r-pr'>#&gt;</span> $seed</span>
-<span class='r-out co'><span class='r-pr'>#&gt;</span> [1] 1818169299</span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span> [1] 148687002</span>
 <span class='r-out co'><span class='r-pr'>#&gt;</span> </span>
 <span class='r-out co'><span class='r-pr'>#&gt;</span> $type</span>
 <span class='r-out co'><span class='r-pr'>#&gt;</span> [1] "lcg"</span>

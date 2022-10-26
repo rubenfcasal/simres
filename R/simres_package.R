@@ -1,7 +1,4 @@
 # pkgdown::build_site()
-# PENDIENTE:
-#  - .ncomp
-
 
 #' simres: Simulation and resampling techniques
 #'

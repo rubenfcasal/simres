@@ -73,7 +73,7 @@ real and CPU times." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">simres</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.2</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.3</span>
       </span>
     </div>
 
@@ -122,7 +122,7 @@ real and CPU times." />
 real and CPU times.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>cpu.time</span><span class='op'>(</span><span class='va'>...</span>, reset <span class='op'>=</span> <span class='cn'>FALSE</span>, total <span class='op'>=</span> <span class='cn'>TRUE</span>, last <span class='op'>=</span> <span class='cn'>TRUE</span>, flush <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span></pre>
+    <pre class="usage"><span><span class='fu'>cpu.time</span><span class='op'>(</span><span class='va'>...</span>, reset <span class='op'>=</span> <span class='cn'>FALSE</span>, total <span class='op'>=</span> <span class='cn'>TRUE</span>, last <span class='op'>=</span> <span class='cn'>TRUE</span>, flush <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span></span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -163,26 +163,26 @@ if <code>last == TRUE</code>.</p></td>
     <div class='dont-index'><p><code><a href='https://rdrr.io/r/base/proc.time.html'>proc.time</a></code>, <code><a href='https://rdrr.io/r/base/system.time.html'>system.time</a></code>, <code><a href='https://rdrr.io/r/utils/flush.console.html'>flush.console</a></code>.</p></div>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><span class='r-in'><span class='fu'>cpu.time</span><span class='op'>(</span>reset<span class='op'>=</span><span class='cn'>TRUE</span><span class='op'>)</span></span>
+    <pre class="examples"><span class='r-in'><span><span class='fu'>cpu.time</span><span class='op'>(</span>reset<span class='op'>=</span><span class='cn'>TRUE</span><span class='op'>)</span></span></span>
 <span class='r-out co'><span class='r-pr'>#&gt;</span> CPU time has been initialized.</span>
-<span class='r-in'><span class='va'>res</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/median.html'>median</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/stats/Uniform.html'>runif</a></span><span class='op'>(</span><span class='fl'>100000</span><span class='op'>)</span><span class='op'>)</span></span>
-<span class='r-in'><span class='fu'>cpu.time</span><span class='op'>(</span><span class='st'>'\nSample median of'</span>, <span class='fl'>100000</span>, <span class='st'>'values ='</span>, <span class='va'>res</span><span class='op'>)</span></span>
+<span class='r-in'><span><span class='va'>res</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/median.html'>median</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/stats/Uniform.html'>runif</a></span><span class='op'>(</span><span class='fl'>100000</span><span class='op'>)</span><span class='op'>)</span></span></span>
+<span class='r-in'><span><span class='fu'>cpu.time</span><span class='op'>(</span><span class='st'>'\nSample median of'</span>, <span class='fl'>100000</span>, <span class='st'>'values ='</span>, <span class='va'>res</span><span class='op'>)</span></span></span>
 <span class='r-out co'><span class='r-pr'>#&gt;</span> Time of last operation: </span>
 <span class='r-out co'><span class='r-pr'>#&gt;</span> Sample median of 1e+05 values = 0.4973763 </span>
 <span class='r-out co'><span class='r-pr'>#&gt;</span>    user  system elapsed </span>
-<span class='r-out co'><span class='r-pr'>#&gt;</span>    0.01    0.00    0.02 </span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span>       0       0       0 </span>
 <span class='r-out co'><span class='r-pr'>#&gt;</span> Total time:</span>
 <span class='r-out co'><span class='r-pr'>#&gt;</span>    user  system elapsed </span>
-<span class='r-out co'><span class='r-pr'>#&gt;</span>    0.01    0.00    0.02 </span>
-<span class='r-in'><span class='va'>res</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/median.html'>median</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/stats/Uniform.html'>runif</a></span><span class='op'>(</span><span class='fl'>1000</span><span class='op'>)</span><span class='op'>)</span></span>
-<span class='r-in'><span class='fu'>cpu.time</span><span class='op'>(</span><span class='st'>'\nSample median of'</span>, <span class='fl'>1000</span>, <span class='st'>'values ='</span>, <span class='va'>res</span><span class='op'>)</span></span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span>       0       0       0 </span>
+<span class='r-in'><span><span class='va'>res</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/median.html'>median</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/stats/Uniform.html'>runif</a></span><span class='op'>(</span><span class='fl'>1000</span><span class='op'>)</span><span class='op'>)</span></span></span>
+<span class='r-in'><span><span class='fu'>cpu.time</span><span class='op'>(</span><span class='st'>'\nSample median of'</span>, <span class='fl'>1000</span>, <span class='st'>'values ='</span>, <span class='va'>res</span><span class='op'>)</span></span></span>
 <span class='r-out co'><span class='r-pr'>#&gt;</span> Time of last operation: </span>
 <span class='r-out co'><span class='r-pr'>#&gt;</span> Sample median of 1000 values = 0.5140944 </span>
 <span class='r-out co'><span class='r-pr'>#&gt;</span>    user  system elapsed </span>
 <span class='r-out co'><span class='r-pr'>#&gt;</span>       0       0       0 </span>
 <span class='r-out co'><span class='r-pr'>#&gt;</span> Total time:</span>
 <span class='r-out co'><span class='r-pr'>#&gt;</span>    user  system elapsed </span>
-<span class='r-out co'><span class='r-pr'>#&gt;</span>    0.01    0.00    0.02 </span>
+<span class='r-out co'><span class='r-pr'>#&gt;</span>       0       0       0 </span>
 </pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

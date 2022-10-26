@@ -74,7 +74,7 @@ only a finite number of values) from its probability mass function." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">simres</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.2</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.3</span>
       </span>
     </div>
 
@@ -124,7 +124,7 @@ for simulating a discrete/categorical probability distribution (that takes on
 only a finite number of values) from its probability mass function.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>rpmf.alias</span><span class='op'>(</span><span class='va'>x</span>, prob <span class='op'>=</span> <span class='fl'>1</span><span class='op'>/</span><span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span><span class='op'>(</span><span class='va'>x</span><span class='op'>)</span>, n <span class='op'>=</span> <span class='fl'>1000</span>, as.factor <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span></pre>
+    <pre class="usage"><span><span class='fu'>rpmf.alias</span><span class='op'>(</span><span class='va'>x</span>, prob <span class='op'>=</span> <span class='fl'>1</span><span class='op'>/</span><span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span><span class='op'>(</span><span class='va'>x</span><span class='op'>)</span>, n <span class='op'>=</span> <span class='fl'>1000</span>, as.factor <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span></span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -157,20 +157,20 @@ deviates.</p>
     <div class='dont-index'><p><code><a href='https://rdrr.io/r/base/sample.html'>sample()</a></code>, <code><a href='rpmf.html'>rpmf()</a></code>, <code><a href='rpmf.table.html'>rpmf.table()</a></code></p></div>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><span class='r-in'><span class='fu'><a href='https://rdrr.io/r/base/Random.html'>set.seed</a></span><span class='op'>(</span><span class='fl'>1</span><span class='op'>)</span></span>
-<span class='r-in'><span class='co'># Simulation of a binomial distribution</span></span>
-<span class='r-in'><span class='va'>n</span> <span class='op'>&lt;-</span> <span class='fl'>10</span></span>
-<span class='r-in'><span class='va'>p</span> <span class='op'>&lt;-</span> <span class='fl'>0.5</span></span>
-<span class='r-in'><span class='va'>nsim</span> <span class='op'>&lt;-</span> <span class='fl'>10</span><span class='op'>^</span><span class='fl'>5</span></span>
-<span class='r-in'><span class='va'>x</span> <span class='op'>&lt;-</span> <span class='fl'>0</span><span class='op'>:</span><span class='va'>n</span></span>
-<span class='r-in'><span class='va'>pmf</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/Binomial.html'>dbinom</a></span><span class='op'>(</span><span class='va'>x</span>, <span class='va'>n</span>, <span class='va'>p</span><span class='op'>)</span></span>
-<span class='r-in'><span class='va'>rx</span> <span class='op'>&lt;-</span> <span class='fu'>rpmf.alias</span><span class='op'>(</span><span class='va'>x</span>, <span class='va'>pmf</span>, <span class='va'>nsim</span><span class='op'>)</span></span>
-<span class='r-in'><span class='co'># Relative frequency plot</span></span>
-<span class='r-in'><span class='fu'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>rx</span><span class='op'>)</span><span class='op'>/</span><span class='va'>nsim</span>, ylab <span class='op'>=</span> <span class='st'>"Relative frequency"</span>, xlab <span class='op'>=</span> <span class='st'>"Value"</span><span class='op'>)</span></span>
-<span class='r-in'><span class='fu'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span><span class='op'>(</span>v <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/mean.html'>mean</a></span><span class='op'>(</span><span class='va'>rx</span><span class='op'>)</span><span class='op'>)</span></span>
-<span class='r-in'><span class='co'># Theoretical values</span></span>
-<span class='r-in'><span class='fu'><a href='https://rdrr.io/r/graphics/points.html'>points</a></span><span class='op'>(</span><span class='va'>x</span>, <span class='va'>pmf</span>, pch <span class='op'>=</span> <span class='fl'>4</span>, col <span class='op'>=</span> <span class='st'>"blue"</span><span class='op'>)</span></span>
-<span class='r-in'><span class='fu'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span><span class='op'>(</span>v <span class='op'>=</span> <span class='va'>p</span><span class='op'>*</span><span class='va'>n</span>, lty <span class='op'>=</span> <span class='fl'>2</span>, col <span class='op'>=</span> <span class='st'>"blue"</span><span class='op'>)</span></span>
+    <pre class="examples"><span class='r-in'><span><span class='fu'><a href='https://rdrr.io/r/base/Random.html'>set.seed</a></span><span class='op'>(</span><span class='fl'>1</span><span class='op'>)</span></span></span>
+<span class='r-in'><span><span class='co'># Simulation of a binomial distribution</span></span></span>
+<span class='r-in'><span><span class='va'>n</span> <span class='op'>&lt;-</span> <span class='fl'>10</span></span></span>
+<span class='r-in'><span><span class='va'>p</span> <span class='op'>&lt;-</span> <span class='fl'>0.5</span></span></span>
+<span class='r-in'><span><span class='va'>nsim</span> <span class='op'>&lt;-</span> <span class='fl'>10</span><span class='op'>^</span><span class='fl'>5</span></span></span>
+<span class='r-in'><span><span class='va'>x</span> <span class='op'>&lt;-</span> <span class='fl'>0</span><span class='op'>:</span><span class='va'>n</span></span></span>
+<span class='r-in'><span><span class='va'>pmf</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/Binomial.html'>dbinom</a></span><span class='op'>(</span><span class='va'>x</span>, <span class='va'>n</span>, <span class='va'>p</span><span class='op'>)</span></span></span>
+<span class='r-in'><span><span class='va'>rx</span> <span class='op'>&lt;-</span> <span class='fu'>rpmf.alias</span><span class='op'>(</span><span class='va'>x</span>, <span class='va'>pmf</span>, <span class='va'>nsim</span><span class='op'>)</span></span></span>
+<span class='r-in'><span><span class='co'># Relative frequency plot</span></span></span>
+<span class='r-in'><span><span class='fu'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>rx</span><span class='op'>)</span><span class='op'>/</span><span class='va'>nsim</span>, ylab <span class='op'>=</span> <span class='st'>"Relative frequency"</span>, xlab <span class='op'>=</span> <span class='st'>"Value"</span><span class='op'>)</span></span></span>
+<span class='r-in'><span><span class='fu'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span><span class='op'>(</span>v <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/mean.html'>mean</a></span><span class='op'>(</span><span class='va'>rx</span><span class='op'>)</span><span class='op'>)</span></span></span>
+<span class='r-in'><span><span class='co'># Theoretical values</span></span></span>
+<span class='r-in'><span><span class='fu'><a href='https://rdrr.io/r/graphics/points.html'>points</a></span><span class='op'>(</span><span class='va'>x</span>, <span class='va'>pmf</span>, pch <span class='op'>=</span> <span class='fl'>4</span>, col <span class='op'>=</span> <span class='st'>"blue"</span><span class='op'>)</span></span></span>
+<span class='r-in'><span><span class='fu'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span><span class='op'>(</span>v <span class='op'>=</span> <span class='va'>p</span><span class='op'>*</span><span class='va'>n</span>, lty <span class='op'>=</span> <span class='fl'>2</span>, col <span class='op'>=</span> <span class='st'>"blue"</span><span class='op'>)</span></span></span>
 <span class='r-plt img'><img src='rpmf.alias-1.png' alt='' width='700' height='433' /></span>
 </pre>
   </div>
