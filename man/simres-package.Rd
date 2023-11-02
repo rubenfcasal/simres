@@ -7,18 +7,19 @@
 \title{simres: Simulation and resampling techniques}
 \description{
 Functions and datasets used in the books:
-\itemize{
-\item \href{https://rubenfcasal.github.io/simbook2}{Simulacion Estadistica}
-\item \href{https://rubenfcasal.github.io/book_remuestreo}{Tecnicas de Remuestreo}
-}
 }
 \details{
+\itemize{
+\item \href{https://rubenfcasal.github.io/simbook}{Técnicas de Simulación y Remuestreo}
+\item \href{https://rubenfcasal.github.io/book_remuestreo}{Técnicas de Remuestreo}
+}
+
 For more information visit \url{https://rubenfcasal.github.io/simres.html}.
 }
 \references{
 Cao R., Fernández-Casal R. (2021). \emph{\href{https://rubenfcasal.github.io/book_remuestreo}{Técnicas de Remuestreo}},  (\href{https://github.com/rubenfcasal/book_remuestreo}{github}).
 
-Fernández-Casal R., Cao R. (2022). \emph{\href{https://rubenfcasal.github.io/simbook2}{Simulación Estadística}}, segunda edición, (\href{https://github.com/rubenfcasal/simbook2}{github}).
+Fernández-Casal R., Cao R., Costa J. (2023). \emph{\href{https://rubenfcasal.github.io/simbook}{Técnicas de Simulación y Remuestreo}}, segunda edición, (\href{https://github.com/rubenfcasal/simbook}{github}).
 }
 \keyword{Monte-Carlo}
 \keyword{bootstrap}

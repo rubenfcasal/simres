@@ -2,11 +2,15 @@
 
 <!-- 
 pkgdown::build_site()
+options(keep.source.pkgs = TRUE)
+remotes::install_github("rubenfcasal/simres", INSTALL_opts = "--with-keep.source") I
 -->
 
 Functions and datasets used in the books:
-* [Simulacion Estadistica](https://rubenfcasal.github.io/simbook2)
-* [Tecnicas de Remuestreo](https://rubenfcasal.github.io/book_remuestreo)
+
+* [Técnicas de Simulación y Remuestreo](https://rubenfcasal.github.io/simbook)
+
+* [Técnicas de Remuestreo](https://rubenfcasal.github.io/book_remuestreo)
 
 For more information visit <https://rubenfcasal.github.io/simres.html>.
 
@@ -17,7 +21,8 @@ version from github with:
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("rubenfcasal/simres")
+# remotes::install_github("rubenfcasal/simres")
+remotes::install_github("rubenfcasal/simres", INSTALL_opts = "--with-keep.source")
 ```
 
 Alternatively, Windows users (with R >= 4.X.X) may install the corresponding *simres_X.Y.Z.zip* file in the [releases section](https://github.com/rubenfcasal/simres/releases/latest) of the github repository:
@@ -31,5 +36,5 @@ install.packages('https://github.com/rubenfcasal/simres/releases/download/v0.1/s
 
 Cao R., Fernández-Casal R. (2021). *[Técnicas de Remuestreo](https://rubenfcasal.github.io/book_remuestreo)*,  ([github](https://github.com/rubenfcasal/book_remuestreo)).
 
-Fernández-Casal R., Cao R. (2022). *[Simulación Estadística](https://rubenfcasal.github.io/simbook2)*, segunda edición, ([github](https://github.com/rubenfcasal/simbook2)).
+Fernández-Casal R., Cao R., Costa J. (2023). *[Técnicas de Simulación y Remuestreo](https://rubenfcasal.github.io/simbook)*, segunda edición, ([github](https://github.com/rubenfcasal/simbook)).
 

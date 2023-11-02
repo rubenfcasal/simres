@@ -32,6 +32,7 @@
 #'     main = paste0("B(", n,", ", p, ") cumulative distribution function"))
 #' @export
 # Based on stats::plot.stepfun()
+# Pendiente: inherits(x, "ecdf"); x2 <- knots(x); y <- x(x2); x <- x2
 cdf.plot <- function (x, y, sort = FALSE, xlim, ylim = range(c(0, y)),
                   xlab = "x", ylab = "F(x)", main = "", add = FALSE,
                   verticals = TRUE, do.points = TRUE, pch = 20, col = 1,
